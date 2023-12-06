@@ -1422,6 +1422,10 @@ h3 {
 	font-size: clamp(1.4rem, 1.08rem + 1.28vw, 1.8rem);
 }
 
+h4 {
+	font-size: clamp(1.2rem, 1.02rem + 1.12vw, 1.4rem);
+}
+
 p {
 	margin-block: 1rem;
 }
@@ -1709,6 +1713,7 @@ strong {
 	font-size: 36px;
 	line-height: 36px;
 	text-transform: uppercase; 
+	color: #fc9;
 }
 
 .lcars-text-bar::before {
