@@ -22,20 +22,6 @@
 			}
 			
         }
-
-        function toggle_class(class_to_swap) {
-            // Iterates through each item of a class, and toggles its visibility - that is to say, swaps it between display="none" and display="block".
-            elements = document.getElementsByClassName(class_to_swap)
-            for (let i = 0; i < elements.length; i++){
-				element = elements[i];
-				if (element.style.display === "none") {
-                    element.style.display = "block";
-                } else {
-                    element.style.display = "none";
-                }
-			}
-        }
-
 		function startup_script() {
 			panel_2_random_numbers();
 		}
@@ -59,7 +45,7 @@
 						</div>
 					</div>
 					<nav id="nav-standard"> 
-						<a href="" id="b-one">01</a>
+						<a href="index.html" id="b-one">HOME</a>
 						<a href="" id="b-two">02</a>
 						<a href="" id="b-three">03</a>
 						<a href="" id="b-five">04</a>
@@ -103,20 +89,8 @@
 				<main>
 
 					<!-- Start your content here. -->
-					<h1>Iron Forge's Computer Partition - Public Segment</h1>
-					<p>I have collected and written some documents which may be some combination of useful and amusing.</p>
-                    <p>Click to open a menu.</p>
-                    <!-- Clicking one of these will call toggle_class('name') where name is unique to each category -->
-                    <br>
-                    <div class="lcars-text-bar" onclick="toggle_class('tech')">
-                        <span>Technical Documentation</span>
-                    </div>
-                    <div class="tech">
-                        
-                        <div onclick="toggle_class('none')"><p>test 1</p></div>
-                        <p>test 2</p>
-                    </div>
-
+					
+					
 					<!-- End content area. -->
 
 					<footer>
