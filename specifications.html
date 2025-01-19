@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Odyssey Specs</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="format-detection" content="telephone=no">
+	<meta name="format-detection" content="date=no">
+	<link rel="stylesheet" type="text/css" href="assets/lcars-ultra-classic.css">
+	<link rel="stylesheet" type="text/css" href="assets/lcars-colors.css">
+	<script src="assets/jquery-3-7-0.min.js"></script>
+    <script>
+        function panel_2_random_numbers() {
+        	sidebar_elements = document.getElementsByClassName("sidebar-random-numbers");
+			// Iterate for every element
+            for (let i = 0; i < sidebar_elements.length; i++){
+				element = sidebar_elements[i];
+				// Take the number - we don't want to change that.
+				var original_content_prefix = element.textContent.split("-")[0] + "-";
+				// Put random numbers on the end.
+				element.textContent = original_content_prefix + String(Math.random()).slice(2, 10);
+			}
+			
+        }
+
+        function toggle_class(class_to_swap) {
+            // Iterates through each item of a class, and toggles its visibility - that is to say, swaps it between display="none" and display="block".
+            elements = document.getElementsByClassName(class_to_swap)
+            for (let i = 0; i < elements.length; i++){
+				element = elements[i];
+				if (element.style.display === "none") {
+                    element.style.display = "block";
+                } else {
+                    element.style.display = "none";
+                }
+			}
+        }
+
+		function startup_script() {
+			panel_2_random_numbers();
+		}
+    </script>
+</head>
+
+<body onload="startup_script()">
+	<section class="wrap-standard" id="column-3">
+		<div class="wrap">
+			<!--<div class="scroll-top"><a id="scroll-top" href=""><span class="hop">screen</span> top</a></div>-->
+			<div class="left-frame-top">
+				<div class="panel-1"><img src="assets/Oddy Emblem Ellipse.png"></div>
+				<div class="panel-2 sidebar-random-numbers">02-00000000</div>
+			</div>
+			<div class="right-frame-top">
+				<div class="banner"> <p>USS ODYSSEY <span style="color:lilac;">DATABASE</span></p> </div>
+				<div class="data-cascade-button-group">
+					<div class="cascade-wrapper">
+						<div class="data-cascade" id="default">
+							<div class="row-1"><div class="dc1">101</div><div class="dc2">7109</div><div class="dc3">1966</div><div class="dc44">36</div><div class="dc55">880</div><div class="dc6">11.03</div><div class="dc77">1954</div><div class="dc8">03</div><div class="dc99">6.08</div><div class="dc100">241</div><div class="dc11">309</div><div class="dc12">7.08</div><div class="dc13">1935</div><div class="dc14">12.20</div><div class="dc150">53</div><div class="dc150">1961</div><div class="dc150">2.16</div></div><div class="row-2"><div class="dc1">102</div><div class="dc2">8102</div><div class="dc3">1987</div><div class="dc44">044</div><div class="dc55">0051</div><div class="dc6">1968</div><div class="dc77">704</div><div class="dc8">10.31</div><div class="dc99">1984</div><div class="dc100">1954</div><div class="dc11">764</div><div class="dc12">1940</div><div class="dc13">9.9</div><div class="dc14">1972</div><div class="dc150">815</div><div class="dc150">4.12</div><div class="dc150">2023</div></div><div class="row-3"><div class="dc1">103</div><div class="dc2">714</div><div class="dc3">1993</div><div class="dc44">0222</div><div class="dc55">4.4</div><div class="dc6">1969</div><div class="dc77">2450</div><div class="dc8">91</div><div class="dc99">56</div><div class="dc100">21</div><div class="dc11">716</div><div class="dc12">801</div><div class="dc13">417</div><div class="dc14">602</div><div class="dc150">5618</div><div class="dc150">238</div><div class="dc150">1443</div></div><div class="row-4"><div class="dc1">104</div><div class="dc2">6104</div><div class="dc3">1995</div><div class="dc44">3.22</div><div class="dc55">1931</div><div class="dc6">0.0</div><div class="dc77">0000</div><div class="dc8">1701</div><div class="dc99">1984</div><div class="dc100">218</div><div class="dc11">908</div><div class="dc12">10</div><div class="dc13">85</div><div class="dc14">1888</div><div class="dc150">27</div><div class="dc150">2879</div><div class="dc150">213</div></div><div class="row-5"><div class="dc1">105</div><div class="dc2">08</div><div class="dc3">2001</div><div class="dc44">713</div><div class="dc55">079</div><div class="dc6">1977</div><div class="dc77">LV</div><div class="dc8">426</div><div class="dc99">105</div><div class="dc100">10</div><div class="dc11">1642</div><div class="dc12">1979</div><div class="dc13">402</div><div class="dc14">795</div><div class="dc150">361</div><div class="dc150">0852</div><div class="dc150">984</div></div><div class="row-6"><div class="dc1">106</div><div class="dc2">31</div><div class="dc3">2017</div><div class="dc44">429</div><div class="dc55">65</div><div class="dc6">871</div><div class="dc77">24</div><div class="dc8">541</div><div class="dc99">656</div><div class="dc100">M</div><div class="dc11">113</div><div class="dc12">12.6</div><div class="dc13">27</div><div class="dc14">05</div><div class="dc150">85</div><div class="dc150">12.25</div><div class="dc150">7884</div></div><div class="row-7"><div class="dc1">107</div><div class="dc2">5</div><div class="dc3">2022</div><div class="dc44">784</div><div class="dc55">3304</div><div class="dc6">42</div><div class="dc77">733</div><div class="dc8">1224</div><div class="dc99">5801</div><div class="dc100">23</div><div class="dc11">1015</div><div class="dc12">84</div><div class="dc13">36</div><div class="dc14">029</div><div class="dc150">24</div><div class="dc150">318</div><div class="dc150">12.24</div></div><div class="row-8"><div class="dc1">108</div><div class="dc2">23</div><div class="dc3">174</div><div class="dc44">91</div><div class="dc55">947</div><div class="dc6">28</div><div class="dc77">527</div><div class="dc8">04</div><div class="dc99">0469</div><div class="dc100">2200</div><div class="dc11">88</div><div class="dc12">1985</div><div class="dc13">540</div><div class="dc14">3121</div><div class="dc150">308</div><div class="dc150">9571</div><div class="dc150">404</div></div>
+						</div>
+					</div>
+					<nav id="nav-standard"> 
+						<a href="index.html" id="b-one">HOME</a>
+						<a href="" id="b-two">02</a>
+						<a href="" id="b-three">03</a>
+						<a href="" id="b-five">04</a>
+					</nav>
+				</div>
+				<div class="bar-panel first-bar-panel">
+					<div class="bar-1"></div>
+					<div class="bar-2"></div>
+					<div class="bar-3"></div>
+					<div class="bar-4"></div>
+					<div class="bar-5"></div>
+				</div>
+			</div>
+		</div>
+		<div class="wrap" id="gap">
+			<div class="left-frame">
+				<div>
+					<div class="panel-3 sidebar-random-numbers">03<span class="hop">-111968</span></div>
+					<div class="panel-4 sidebar-random-numbers">04<span class="hop">-041969</span></div>
+					<div class="panel-5 sidebar-random-numbers">05<span class="hop">-1701D</span></div>
+					<div class="panel-6 sidebar-random-numbers">06<span class="hop">-071984</span></div>
+					<div class="panel-7 sidebar-random-numbers">07<span class="hop">-081940</span></div>
+					<div class="panel-8 sidebar-random-numbers">08<span class="hop">-47148</span></div>
+					<div class="panel-9 sidebar-random-numbers">09<span class="hop">-081966</span></div>
+					<div class="panel-8 sidebar-random-numbers">10<span class="hop">-2525V</span></div>
+					<div class="panel-7 sidebar-random-numbers">11<span class="hop">-7754</span></div>
+					<div class="panel-5 sidebar-random-numbers">12<span class="hop">-4587</span></div>
+				</div>
+				<div>
+					<div class="panel-10 sidebar-random-numbers">10<span class="hop">-31</span></div>
+				</div>
+			</div>
+			<div class="right-frame">
+				<div class="bar-panel">
+					<div class="bar-6"></div>
+					<div class="bar-7"></div>
+					<div class="bar-8"></div>
+					<div class="bar-9"></div>
+					<div class="bar-10"></div>
+				</div>
+				<main>
+
+					<!-- Start your content here. -->
+					<h1 class="go-honey">U.S.S. Odyssey NCC-97404, Athena Class</h1>
+					<h2 class="go-center">At-A-Glance Specifications and Capabilities</h2>
+					<h4 class="go-center">Compiled by Lt. Iron Forge Emphatic Coerce Third Lake Northern Islands, Chief Engineer, U.S.S. Odyssey</h4>
+
+					<h2 class="go-honey">CONTENTS - SELECT TO EXPAND</h2>
+					<p>Red indicates that a section has not yet been written. Gold indicates that a section contains minimal detail. A purple section is complete.</p>
+					<div class="lcars-text-bar" onclick="toggle_class('contents-1')">
+                        <span>1.0 INTRODUCTION</span>
+                    </div>
+
+					<p><a class="go-mars contents-1" href="#1.1" style="display:none;">1.1 PREFACE</a></p>
+					<p><a class="go-mars contents-1" href="#1.2" style="display:none;">1.2 BACKGROUND AND DESIGN HISTORY</a></p>
+
+					<div class="lcars-text-bar" onclick="toggle_class('contents-2')">
+                        <span>2.0 OVERVIEW</span>
+                    </div>
+
+					<p><a class="go-mars contents-2" href="#2.1" style="display:none;">2.1 VESSEL OVERVIEW</a></p>
+					<p><a class="go-mars contents-2" href="#2.2" style="display:none;">2.2 CREW AND MISSION CAPABILITY OVERVIEW</a></p>
+
+					<div class="lcars-text-bar" onclick="toggle_class('contents-3')">
+					<span>3.0 PERMEATING SYSTEMS</span>
+					</div>
+
+					<p><a class="go-mars contents-3" href="#3.1" style="display:none;">3.1 SHIP STRUCTURE</a></p>
+					<p><a class="go-mars contents-3" href="#3.1.1" style="display:none;">&emsp;3.1.1 KEEL</a></p>
+					<p><a class="go-mars contents-3" href="#3.1.2" style="display:none;">&emsp;3.1.2 PRIMARY ENDOSTRUCTURE</a></p>
+
+					<div class="lcars-text-bar" onclick="toggle_class('contents-4')">
+					<span>4.0 COMMAND AND CONTROL SYSTEMS</span>
+					</div>
+
+					<div class="lcars-text-bar" onclick="toggle_class('contents-5')">
+					<span>5.0 POWER SYSTEMS</span>
+					</div>
+
+					<div class="lcars-text-bar" onclick="toggle_class('contents-6')">
+					<span>6.0 PROPULSION SYSTEMS</span>
+					</div>
+
+					<div class="lcars-text-bar" onclick="toggle_class('contents-7')">
+					<span>7.0 TACTICAL SYSTEMS</span>
+					</div>
+
+					<div class="lcars-text-bar" onclick="toggle_class('contents-8')">
+					<span>8.0 SECURITY SYSTEMS</span>
+					</div>
+
+					<div class="lcars-text-bar" onclick="toggle_class('contents-9')">
+					<span>9.0 COMPUTER SYSTEMS</span>
+					</div>
+
+					<div class="lcars-text-bar" onclick="toggle_class('contents-10')">
+					<span>10.0 LOGISTICAL SYSTEMS</span>
+					</div>
+
+					<div class="lcars-text-bar" onclick="toggle_class('contents-11')">
+					<span>11.0 SCIENTIFIC SYSTEMS</span>
+					</div>
+
+					<div class="lcars-text-bar" onclick="toggle_class('contents-12')">
+					<span>12.0 NAVIGATIONAL SYSTEMS</span>
+					</div>
+
+					<div class="lcars-text-bar" onclick="toggle_class('contents-13')">
+					<span>13.0 COMMUNICATIONS SYSTEMS</span>
+					</div>
+
+					<div class="lcars-text-bar" onclick="toggle_class('contents-14')">
+					<span>14.0 ENVIRONMENTAL SYSTEMS</span>
+					</div>
+
+					<div class="lcars-text-bar" onclick="toggle_class('contents-15')">
+					<span>15.0 CREW SUPPORT SYSTEMS</span>
+					</div>
+
+					<div class="lcars-text-bar" onclick="toggle_class('contents-16')">
+					<span>16.0 CREW EQUIPMENT</span>
+					</div>
+
+					<div class="lcars-text-bar" onclick="toggle_class('contents-17')">
+					<span>17.0 AUXILIARY CRAFT</span>
+					</div>
+
+					<div class="lcars-text-bar" onclick="toggle_class('contents-18')">
+					<span>18.0 FLIGHT OPERATIONS</span>
+					</div>
+
+					<div class="lcars-text-bar" onclick="toggle_class('contents-19')">
+					<span>19.0 EMERGENCY FLIGHT OPERATIONS</span>
+					</div>
+
+					<h2 id="1.0">1.0 INTRODUCTION</h2>
+					<h3 id="1.1">1.1 PREFACE</h3>
+					<!-- End content area. -->
+
+					<footer>
+						<div class="footer-inside">
+							<div class="footer-text">
+
+								<p> <!-- Your copyright information is only a suggestion. You can also choose to delete this paragraph. -->
+									Content Copyright &#169; 2023 Albert_Newton
+									<!-- Note to self, do I need this? Probably. -->
+								</p>
+
+								<p>	<!-- This paragraph must not be removed. -->
+									LCARS Inspired Website Template by <a href="https://www.thelcars.com">www.TheLCARS.com</a>
+								</p>
+
+							</div>
+						</div>
+						<div class="footer-panel"> <span class="hop">22</span>47 </div>
+					</footer>
+				</main>
+			</div>
+		</div>
+	</section>	
+	<script type="text/javascript" src="assets/lcars.js"></script>
+</body>
+
+</html>
